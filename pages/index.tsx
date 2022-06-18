@@ -1,32 +1,22 @@
-import Head from "next/head";
-import Link from "next/link";
-
-import Header from "@components/Header";
-import Footer from "@components/Footer";
-import Layout from "@components/Layout";
+import Account from "@components/Account";
+import Auth from "@components/Auth";
+import { supabase } from "@components/utils/supabaseClient";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [session, setSession] = useState(null)
+
+  useEffect(() => {
+    setSession(supabase.auth.session())
+    supabase.auth.onAuthStateChange((_event, session) => {
+      setSession(session)
+    })
+  }, [])
+
   return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <Header title="Welcome to my app!" />
-
-        <Layout title="Home | Next.js + TypeScript Example">
-          <h1>Hello Next.js 👋</h1>
-          <p>
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </p>
-        </Layout>
-      </main>
-
-      <Footer />
+    <div className="container" style={{ padding: '50px 0 100px 0' }}>
+      {!session ? <h1>No Session</h1> : <h1>Session Found</h1>}
+      {!session ? <Auth /> : <Account key={session.user.id} session={session} />}
     </div>
-  );
+  )
 }
