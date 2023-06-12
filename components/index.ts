@@ -1,5 +1,5 @@
-// import Hero from './Hero';
+import NavbarHome from './common/NavbarHome/NavbarHome';
 
-// export {
-//   Hero
-// }
+export {
+  NavbarHome 
+}
