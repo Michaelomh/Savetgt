@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import { Inter, Roboto_Mono } from 'next/font/google'
 import './globals.css'
-import { NavbarHome } from '@components'
 
 export const metadata: Metadata = {
   title: "savetgt",
@@ -24,7 +23,6 @@ const RootLayout = ( {children}: {children: React.ReactNode}) => {
   return (
     <html lang="en"  className={`${inter.variable} ${roboto_mono.variable}`}>
       <body>
-        <NavbarHome />
         <main className='app'>{children}</main>
       </body>
     </html>

@@ -8,8 +8,8 @@ const NavbarHome = () => {
       </div>
       
       <div className="flex gap-3 items-center">
-        <Link href="/login">Login</Link>
-        <Link href="/dashboard">Dashboard</Link>
+        <Link href="/auth/login">Login</Link>
+        <Link href="/">Dashboard</Link>
       </div>
     </nav>
   )

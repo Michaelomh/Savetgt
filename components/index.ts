@@ -1,4 +1,4 @@
-import NavbarHome from './common/NavbarHome/NavbarHome';
+import NavbarHome from './pages/shared/navbarHome/NavbarHome';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 

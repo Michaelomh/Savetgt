@@ -1,0 +1,3 @@
+.login__layout {
+  @apply h-screen w-screen flex items-center justify-center;
+}
