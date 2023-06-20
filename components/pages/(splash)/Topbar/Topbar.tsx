@@ -1,7 +1,6 @@
-import Link from "next/link"
+import { ThemeToggle } from "@components/pages/shared/ThemeToggle"
 
 import { HomeNavigation } from "./HomeNavigation"
-import { ThemeToggle } from "./ThemeToggle"
 import { navItems } from "./Topbar.constants"
 
 const NavbarHome = () => {

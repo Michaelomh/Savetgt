@@ -34,7 +34,6 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <NavbarHome />
           <main className="app">{children}</main>
         </ThemeProvider>
       </body>
