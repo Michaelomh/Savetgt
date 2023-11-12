@@ -1,8 +1,8 @@
 {
   "name": "Michael Ong",
   "short_name": "Michael",
-  "theme_color": "#ffcbe4",
-  "background_color": "#fa99ca",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
   "display": "standalone",
   "scope": "/",
   "start_url": "https://savetgt.netlify.app/",
