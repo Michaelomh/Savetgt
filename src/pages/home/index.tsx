@@ -1,17 +1,19 @@
-import { Link } from 'react-router-dom'
+import CallToAction from './callToAction'
+import Features from './features'
+import Hero from './hero'
+import HowItWorks from './howItWorks'
+import Navigation from './navigation'
+import Testimonials from './testimonials'
 
 function Home() {
   return (
     <div>
-      <h1>Home</h1>
-      <ul>
-        <li>
-          <Link to="/auth">Auth</Link>
-        </li>
-        <li>
-          <Link to="/dashboard">Dashboard</Link>
-        </li>
-      </ul>
+      <Navigation />
+      <Hero />
+      <Features />
+      <HowItWorks />
+      <Testimonials />
+      <CallToAction />
     </div>
   )
 }
