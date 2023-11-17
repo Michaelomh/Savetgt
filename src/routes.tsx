@@ -1,13 +1,13 @@
 import { Navigate, createBrowserRouter } from 'react-router-dom'
 import Home from './pages/home'
-import Dashboard from './pages/dashboard'
-import Auth from './pages/auth'
+import NotFoundPage from './components/shared/not-found'
+import WorkInProgressPage from './components/shared/work-in-progress'
 
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },
-  { path: '/dashboard', element: <Dashboard /> },
-  { path: '/auth', element: <Auth /> },
-  { path: '*', element: <div>404 NOT FOUND</div> },
+  { path: '/dashboard', element: <WorkInProgressPage /> },
+  { path: '/auth', element: <WorkInProgressPage /> },
+  { path: '*', element: <NotFoundPage /> },
   { path: '/admin', element: <Navigate to="/" replace /> },
 ])
 

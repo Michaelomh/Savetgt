@@ -4,17 +4,22 @@ import Hero from './hero'
 import HowItWorks from './howItWorks'
 import Navigation from './navigation'
 import Testimonials from './testimonials'
+import useScroll from '@/hooks/useScrollToElement'
 
 function Home() {
+  const { targetRef: featuresRef, scrollToElement: scrollToFeatures } = useScroll()
+  const { targetRef: testimonialsRef, scrollToElement: scrollToTestimonials } = useScroll()
+  const { targetRef: howItWorksRef, scrollToElement: scrollToHowItWorks } = useScroll()
+
   return (
-    <div>
-      <Navigation />
+    <section className="flex flex-col items-center space-y-8">
+      <Navigation handleScrolls={[scrollToFeatures, scrollToTestimonials, scrollToHowItWorks]} />
       <Hero />
-      <Features />
-      <HowItWorks />
-      <Testimonials />
+      <Features ref={featuresRef} />
+      <HowItWorks ref={howItWorksRef} />
+      <Testimonials ref={testimonialsRef} />
       <CallToAction />
-    </div>
+    </section>
   )
 }
 
