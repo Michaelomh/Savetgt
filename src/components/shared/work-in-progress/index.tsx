@@ -10,7 +10,7 @@ export default function WorkInProgressPage() {
       <section className="flex flex-col items-center justify-center min-h-[calc(100vh-64px)] bg-gray-50 dark:bg-green-900 space-y-8 pb-16">
         <HardHat size="300px" className="text-emerald-700 dark:text-emerald-200" />
         <div className="text-center space-y-4">
-          <h1 className="text-4xl tracking-wide font-bold font-kanit uppercase text-emerald-700 dark:text-emerald-200">
+          <h1 className="text-4xl tracking-wide font-bold font-montserrat uppercase text-emerald-700 dark:text-emerald-200">
             Work in progress!
           </h1>
           <p className="text-lg font-inter text-gray-600 dark:text-gray-400">

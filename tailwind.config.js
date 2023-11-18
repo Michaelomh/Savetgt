@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     fontFamily: {
       inter: ['Inter', 'sans-serif'],
-      kanit: ['Kanit', 'sans-serif'],
+      montserrat: ['Montserrat', 'sans-serif'],
     },
     container: {
       center: true,
