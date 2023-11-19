@@ -4,15 +4,14 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 
 type Props = {
   testimonial: TestimonialType
-  index: number
 }
 
-function TestimonialItem({ testimonial, index = 1 }: Props) {
+function TestimonialItem({ testimonial }: Props) {
   return (
     <Card>
       <CardHeader>
         <div className="flex">
-          <img src={`/avatars/avatar-${index}.png`} alt="avatar" className="h-[48px] pr-2" />
+          <img src={testimonial.image} alt="avatar" className="h-[48px] pr-2" />
           <div>
             <p className="text-[18px] font-inter font-bold text-black">{testimonial.name}</p>
             <p className="text-[16px] font-inter font-medium text-neutral-400">@{testimonial.username}</p>

@@ -8,20 +8,23 @@ const testimonials: TestimonialType[] = [
   {
     name: 'Jordan Mitchell',
     username: 'JordanNomad',
-    testimonial: `SaveTGT is more than an app; it's a lifeline for our financial journey. The tailored quiz helped us define our goals, and linking accounts made sure we're always on the same page. Real-time spending tracking and analytics are game-changers, offering a clear roadmap to financial freedom. Consolidating at month-end is the icing on the cake, giving us a comprehensive view that keeps us accountable. SaveTGT is our ticket to a stress-free and prosperous financial future! 📈`,
+    testimonial: `SaveTgt is more than an app; it's a lifeline for our financial journey. The tailored quiz helped us define our goals, and linking accounts made sure we're always on the same page. Real-time spending tracking and analytics are game-changers, offering a clear roadmap to financial freedom. Consolidating at month-end is the icing on the cake, giving us a comprehensive view that keeps us accountable. SaveTgt is our ticket to a stress-free and prosperous financial future! 📈`,
     date: new Date(2023, 10, 4, 14, 30, 13),
+    image: '/avatars/avatar-1.png',
   },
   {
     name: 'Marcus Cheng',
     username: 'mma__cuss',
     testimonial: `SaveTgt has transformed our financial journey as a couple. With its intuitive features, we can easily track and manage our joint expenses, fostering better communication and understanding. Real-time analytics and clear visualizations make it a joy to navigate our shared finances. We've achieved our savings goals faster and with less stress, thanks to SaveTgt!`,
     date: new Date(2022, 1, 15, 18, 0, 41),
+    image: '/avatars/avatar-6.png',
   },
   {
     name: 'Alex Zhang Chen Wei',
     username: 'AlexZhangCW487',
     testimonial: `SaveTgt has been a game-changer for me and my wife. Linking our accounts seamlessly unified our views on shared finances. Consolidating at the end of the month has become a stress-free ritual, highly recommend it to every couple!`,
     date: new Date(2022, 7, 22, 20, 15, 25),
+    image: '/avatars/avatar-3.png',
   },
   {
     name: 'Michelle Turner',
@@ -29,6 +32,7 @@ const testimonials: TestimonialType[] = [
     testimonial:
       'SaveTgt turned what used to be a source of tension into a shared accomplishment. The tailored quiz helped us set up the app according to our unique preferences. There is truly no other app out there! 🔥🔥🔥',
     date: new Date(2023, 4, 7, 15, 1, 56),
+    image: '/avatars/avatar-4.png',
   },
   {
     name: 'Mia Li ',
@@ -36,6 +40,7 @@ const testimonials: TestimonialType[] = [
     testimonial:
       "SaveTgt has seamlessly integrated efficiency into our financial planning. The tailored quiz ensured that the app caters to our unique needs. Linking accounts provided a unified view, making collaborative decisions a breeze. Tracking spending in real-time with descriptive graphs allowed us to stay on top of our shared financial goals. Consolidating at the end of the month is now a ritual that brings order and clarity to our finances. We're in control, thanks to SaveTgt!",
     date: new Date(2023, 3, 3, 8, 7, 11),
+    image: '/avatars/avatar-5.png',
   },
 ]
 
@@ -54,18 +59,18 @@ const TestimonialsSection = React.forwardRef<HTMLDivElement, Props>((_, ref) => 
 
       <div className="grid grid-cols-4 gap-4 pt-8">
         <div>
-          <TestimonialItem testimonial={testimonials[0]} index={1} />
+          <TestimonialItem testimonial={testimonials[0]} />
         </div>
         <div>
-          <TestimonialItem testimonial={testimonials[1]} index={6} />
+          <TestimonialItem testimonial={testimonials[1]} />
         </div>
         <div>
-          <TestimonialItem testimonial={testimonials[3]} index={4} />
+          <TestimonialItem testimonial={testimonials[3]} />
           <div className="pt-4" />
-          <TestimonialItem testimonial={testimonials[2]} index={3} />
+          <TestimonialItem testimonial={testimonials[2]} />
         </div>
         <div>
-          <TestimonialItem testimonial={testimonials[4]} index={5} />
+          <TestimonialItem testimonial={testimonials[4]} />
         </div>
       </div>
     </section>

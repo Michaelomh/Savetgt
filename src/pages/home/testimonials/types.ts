@@ -3,4 +3,5 @@ export type TestimonialType = {
   username: string
   testimonial: string
   date: Date
+  image: string
 }

@@ -6,7 +6,7 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "https://savetgt.netlify.app/",
-  "description": "Savetgt",
+  "description": "SaveTgt",
   "orientation": "any",
   "icons": [
     {
