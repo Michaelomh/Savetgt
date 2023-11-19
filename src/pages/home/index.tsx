@@ -12,14 +12,14 @@ function Home() {
   const { targetRef: howItWorksRef, scrollToElement: scrollToHowItWorks } = useScroll()
 
   return (
-    <section className="flex flex-col items-center space-y-8 overflow-x-hidden gap-16">
+    <div className="flex flex-col items-center overflow-x-hidden gap-16">
       <Navigation handleScrolls={[scrollToFeatures, scrollToTestimonials, scrollToHowItWorks]} />
       <Hero />
       <Features ref={featuresRef} />
       <HowItWorks ref={howItWorksRef} />
       <Testimonials ref={testimonialsRef} />
       <CallToAction />
-    </section>
+    </div>
   )
 }
 
