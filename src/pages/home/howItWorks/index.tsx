@@ -9,7 +9,7 @@ function getRandomNumber() {
 }
 
 const HowItWorksSection = React.forwardRef<HTMLDivElement, Props>((_, ref) => {
-  const [random, setRandom] = useState<number>(0)
+  const [random, setRandom] = useState<number>(1)
 
   const randomize = () => {
     setRandom(getRandomNumber())

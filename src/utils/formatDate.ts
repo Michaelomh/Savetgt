@@ -2,7 +2,7 @@ import format from 'date-fns/format'
 
 const getDateFormatFromDictionary = (dateFormat: string) => {
   switch (dateFormat) {
-    case 'splash-testimonial':
+    case 'landing-testimonial':
       return 'p · PP'
     default:
       return undefined
