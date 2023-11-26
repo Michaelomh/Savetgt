@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
-import clsx from 'clsx'
 
 import { Button } from '@/components/ui/button'
 import NavigationItem from './navigation-item'
@@ -13,37 +11,8 @@ type Props = {
 const NAVIGATION_ITEMS = ['Features', 'How it works', 'Testimonials']
 
 function Navigation({ isErrorPage = false, handleScrolls }: Props) {
-  // State to hold whether the scroll is above a certain point
-  const [isAboveThreshold, setIsAboveThreshold] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Get the current scroll position
-      const scrollPosition = window.scrollY || document.documentElement.scrollTop
-
-      // Set a threshold value (adjust as needed)
-      const scrollThreshold = 900
-
-      // Check if the scroll position is above the threshold
-      setIsAboveThreshold(scrollPosition > scrollThreshold)
-    }
-
-    // Attach the scroll event listener
-    window.addEventListener('scroll', handleScroll)
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, []) // Empty dependency array to run the effect only once on mount
-
   return (
-    <div
-      className={clsx(
-        'flex h-16 items-center justify-center px-4 w-screen fixed top-0 left-0 transition-all duration-500',
-        isAboveThreshold ? 'bg-emerald-50' : 'bg-transparent'
-      )}
-    >
+    <div className="flex h-16 items-center justify-center px-4 w-screen fixed top-0 left-0 transition-all duration-500 bg-white/[.85]">
       <nav className="flex items-center lg:space-x-6 w-full max-w-[1280px] justify-between">
         <div className="flex flex-row items-center space-x-4 ">
           <Link to="/" className="text-sm font-medium transition-colors hover:text-primary">

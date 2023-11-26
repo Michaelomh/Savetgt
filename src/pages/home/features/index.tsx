@@ -22,7 +22,7 @@ const TEMP_FEATURES = [
 
 const FeaturesSection = React.forwardRef<HTMLDivElement, Props>((_, ref) => {
   return (
-    <section className="h-full max-w-[1280px] w-full" ref={ref}>
+    <section className="h-full max-w-[1280px] w-full px-16" ref={ref}>
       <div className="top-0 left-0 w-full h-full flex flex-col items-center">
         <h2 className="text-[36px] font-montserrat font-bold">What is a couple financial tracking app?</h2>
         <p className="text-[16px] font-inter font-normal text-[#434343]">

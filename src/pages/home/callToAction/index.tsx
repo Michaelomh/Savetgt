@@ -5,7 +5,7 @@ export default function CallToActionSection() {
   return (
     <section
       className="w-screen h-[524px] justify-center flex flex-col items-center bg-[url('splash/cta-backdrop.svg')]
-      bg-no-repeat bg-[length:100%] bg-[50%_100%]"
+      bg-no-repeat bg-[length:100%] bg-[50%_100%] padding"
     >
       <h2 className="text-[36px] font-montserrat font-bold">Still unsure? No problem!</h2>
       <p className="text-[16px] font-inter font-normal text-neutral-500">
