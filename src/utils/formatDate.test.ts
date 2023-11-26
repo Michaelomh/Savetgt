@@ -3,7 +3,7 @@ import formatDate from './formatDate'
 describe(formatDate, () => {
   const TEST_DATE = new Date(2019, 2, 11, 14, 12, 59)
   it('retrieves formatted date from dictionary', () => {
-    expect(formatDate(TEST_DATE, 'splash-testimonial')).toBe('2:12 PM · Mar 11, 2019')
+    expect(formatDate(TEST_DATE, 'landing-testimonial')).toBe('2:12 PM · Mar 11, 2019')
   })
 
   it('retrieves formatted date from dateFormat', () => {

@@ -23,7 +23,7 @@ function TestimonialItem({ testimonial }: Props) {
       </CardContent>
       <CardFooter>
         <p className="text-[16px] font-inter font-medium text-neutral-400">
-          {formatDate(testimonial.date, 'splash-testimonial')}
+          {formatDate(testimonial.date, 'landing-testimonial')}
         </p>
       </CardFooter>
     </Card>
