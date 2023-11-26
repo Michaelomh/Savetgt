@@ -12,7 +12,7 @@ function Home() {
   const { targetRef: howItWorksRef, scrollToElement: scrollToHowItWorks } = useScroll()
 
   return (
-    <div className="flex flex-col items-center overflow-x-hidden gap-16">
+    <div className="flex flex-col items-center overflow-x-hidden gap-32">
       <Navigation handleScrolls={[scrollToFeatures, scrollToTestimonials, scrollToHowItWorks]} />
       <Hero />
       <Features ref={featuresRef} />
