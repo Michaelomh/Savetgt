@@ -1,9 +1,9 @@
-import CallToAction from './callToAction'
-import Features from './features'
-import Hero from './hero'
-import HowItWorks from './howItWorks'
-import Navigation from './navigation'
-import Testimonials from './testimonials'
+import CallToAction from './landing/callToAction'
+import Features from './landing/features'
+import Hero from './landing/hero'
+import HowItWorks from './landing/howItWorks'
+import Navigation from './shared/navigation'
+import Testimonials from './landing/testimonials'
 import useScroll from '@/hooks/useScrollToElement'
 
 function Home() {

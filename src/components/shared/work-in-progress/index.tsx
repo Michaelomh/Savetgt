@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { HardHat } from 'lucide-react'
-import Navigation from '../../../pages/home/navigation'
+import Navigation from '../../../pages/[landing]/shared/navigation'
 import { Button } from '@/components/ui/button'
 
 export default function WorkInProgressPage() {

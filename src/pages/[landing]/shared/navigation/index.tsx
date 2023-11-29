@@ -28,6 +28,11 @@ function Navigation({ isErrorPage = false, handleScrolls }: Props) {
               />
             )
           })}
+          <Button asChild variant="link">
+            <Link to="/support" className="text-sm font-medium transition-colors hover:text-primary">
+              Support
+            </Link>
+          </Button>
         </div>
 
         <div>

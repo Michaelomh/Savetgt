@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import { AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 
-export type AccordionProps = {
+export type HowItWorksAccordionProps = {
   accordionTrigger: React.ReactNode
   accordionContent: React.ReactNode
   accordionValue: string
@@ -13,7 +13,7 @@ export function HowItWorksAccordion({
   accordionTrigger,
   accordionContent,
   isActive = false,
-}: AccordionProps) {
+}: HowItWorksAccordionProps) {
   return (
     <AccordionItem value={accordionValue} className="no-underline">
       <AccordionTrigger
