@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Accordion } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
-import { AccordionProps, HowItWorksAccordion } from './hiw-accordion'
+import { HowItWorksAccordionProps, HowItWorksAccordion } from './hiw-accordion'
 
-const HOW_IT_WORKS_CONTENT: AccordionProps[] = [
+const HOW_IT_WORKS_CONTENT: HowItWorksAccordionProps[] = [
   {
     accordionValue: 'step-1',
     accordionTrigger: '1. Tailor your experience',
